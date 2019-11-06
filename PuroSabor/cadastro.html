@@ -1,0 +1,37 @@
+<html>
+<head>
+
+	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+	<link href="font/font.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<meta charset="utf-8" >
+<title>Cadastro de Cliente</title>
+</head>
+<body background="agenda2.jpg">
+	<center>
+		<br>
+		<a class="navbar-brand" href="cadastro.html"><img src="logo.png" width="250px"></a> 
+		<br><br>
+		<h1>Cadastro dos clientes</h1>
+		<br><br>
+<form method="POST" action="cadastro.php">
+<label>Digite seu CPF:              </label> <input type="text" name="CPF" id="login" placeholder="Ex.: 000.000.000-00">
+<br><br>
+<label> Digite seu Nome:            </label> <input type="text" name="Nome" id="Nome">
+<br><br>
+<label>Digite sua senha:            </label> <input type="password" name="senha" id="senha">
+<br><br>
+<label>Digite o número de sua mesa: </label> <input type="text" name="Mesa" id="Mesa" placeholder="Ex.: Mesa 1" size="15">
+<br><br>
+<input type="submit" value="Cadastrar" id="cadastrar" class="btn btn-success" name="Cadastrar">
+<br>
+</form>
+<a href="index.html">
+<button class="btn btn-success">Faça login aqui</button></a>
+</center>
+</body>
+</html>

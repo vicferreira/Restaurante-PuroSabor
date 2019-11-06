@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+	<meta charset="utf-8" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="font/font.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+  <script type="text/javascript">
+function verificar(){
+	if(document.form.op.value.length==0){
+		alert("Ordene por algo!");
+		return false;
+		window.location.href='listagem.html';
+	}
+	if(document.form.ord.value.length==0){
+		alert("Escolha uma opção");
+		return false;
+		window.location.href='listagem.html';
+	}
+
+}
+</script>
+	<title>Fila de espera</title>
+</head>
+<body background="agenda2.jpg">
+	<center>
+		<br>
+		<a class="navbar-brand" href="listagem.html"><img src="logo.png" width="250px"></a> 
+	<fieldset>
+	<legend><h3>Fila de Espera</h3></legend>
+	<br>
+<form name="form" method="POST" action="listar.php">
+	<label><h2>Ordenar por:</h2></label>
+	<br><br>
+	<input type="radio" name="op" value="listar_cpf"> CPF
+	<input type="radio" name="op" value="listar_pedido"> Pedido
+	<input type="radio" name="op" value="listar_mesa"> Mesa
+	<input type="radio" name="op" value="listar_nome"> Nome
+	<label><h2>Ordem:</h2></label>
+	<br><br>
+	<input type="radio" name="ord" value="crescente"> Crescente
+	<input type="radio" name="ord" value="decrescente"> Decrescente
+	<br><br>
+<input type="submit" value="Listar" name="Listar" class="btn btn-primary" onclick="verificar();">
+<input type="reset" value="Limpar" name="Limpar" class="btn btn-primary">
+<br><br>
+<a href="pedidos.html">
+<br><br>
+<button type="button" class="btn btn-outline-secondary">Voltar para a Tela de Pedidos</button></a>
+<a href="restaurante.html">
+<br><br> 
+<button type="button" class="btn btn-outline-secondary">Voltar para o Restaurante</button></a>   
+</fieldset>
+</form>
+</center>
+</body>
+</html>
